@@ -7,6 +7,7 @@ def easeLinear_bmp(t, b, c, d):
 def easeLinear(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeLinear_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -23,6 +24,7 @@ def easeInQuad_bmp(t, b, c, d):
 def easeInQuad(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInQuad_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -39,6 +41,7 @@ def easeOutQuad_bmp (t, b, c, d):
 def easeOutQuad(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeOutQuad_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -57,6 +60,7 @@ def easeInOutQuad_bmp (t, b, c, d):
 def easeInOutQuad(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInOutQuad_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -73,6 +77,7 @@ def easeInSine_bmp (t, b, c, d):
 def easeInSine(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInSine_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -89,6 +94,7 @@ def easeOutSine_bmp(t, b, c, d):
 def easeOutSine(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeOutSine_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -106,6 +112,7 @@ def easeInOutSine_bmp(t, b, c, d):
 def easeInOutSine(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInOutSine_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -122,6 +129,7 @@ def easeInExpo_bmp(t, b, c, d):
 def easeInExpo(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInExpo_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -138,6 +146,7 @@ def easeOutExpo_bmp(t, b, c, d):
 def easeOutExpo(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeOutExpo_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -160,6 +169,7 @@ def easeInOutExpo_bmp(t, b, c, d):
 def easeInOutExpo(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInOutExpo_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -175,6 +185,7 @@ def easeInCirc_bmp(t, b, c, d):
 def easeInCirc(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInCirc_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -194,6 +205,7 @@ def easeInOutQuart_bmp(t, b, c, d):
 def easeInOutQuart(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInOutQuart_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
@@ -225,6 +237,7 @@ def easeInElastic_bmp(t, b, c, d):
 def easeInElastic(obj, x_or_y, startPos, Endpos, speed):
     startTime = time.time()
     while True:
+        obj.update()
         t = time.time() - startTime
         position = easeInElastic_bmp(t, startPos, Endpos, speed)
         if position >= Endpos:
